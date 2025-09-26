@@ -116,7 +116,8 @@ int main() {
 
     p1.print(), p2.print(), p3.print(), p4.print(), p5.print();
 
-    cout << left << setw(20) << "equals(p1, p2) = " << left << boolalpha << p1.equals(p2) << endl;
-    cout << left << setw(20) << "equals(p3, p4) = " << left << boolalpha << p3.equals(p4) << endl;
-    cout << left << setw(20) << "equals(p3, p3) = " << left << boolalpha << p3.equals(p3) << endl;
+    cout << boolalpha;
+    cout << left << setw(20) << "equals(p1, p2) = " << left << p1.equals(p2) << endl;
+    cout << left << setw(20) << "equals(p3, p4) = " << left << p3.equals(p4) << endl;
+    cout << left << setw(20) << "equals(p3, p3) = " << left << p3.equals(p3) << endl;
 }

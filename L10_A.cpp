@@ -118,4 +118,5 @@ int main() {
 
     cout << left << setw(20) << "equals(p1, p2) = " << left << boolalpha << p1.equals(p2) << endl;
     cout << left << setw(20) << "equals(p3, p4) = " << left << boolalpha << p3.equals(p4) << endl;
+    cout << left << setw(20) << "equals(p3, p3) = " << left << boolalpha << p3.equals(p3) << endl;
 }

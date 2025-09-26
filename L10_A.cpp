@@ -31,6 +31,38 @@ void personType::print() const {
         << left << " | Gender: " << left << setw(20) << this->gender_ << endl;
 }
 
+bool personType::equals(const personType& other) const {
+    // Circuited comparison
+    if (this->first_name_ != other.first_name_) {
+        return false;
+    }
+
+    if (this->last_name_ != other.last_name_) {
+        return false;
+    }
+
+    if (this->address_ != other.address_) {
+        return false;
+    }
+
+    if (this->height_inches_ != other.height_inches_)  {
+        return false;
+    }
+
+    if (this->date_of_birth_ != other.date_of_birth_) {
+        return false;
+    }
+
+    if (
+        static_cast<unsigned char>(tolower(this->gender_)) != // Case insensitive
+        static_cast<unsigned char>(tolower(other.gender_))
+    ) {
+        return false;
+    }
+
+    return true;
+}
+
 int main() {
     personType p1{
         "Sabrina",

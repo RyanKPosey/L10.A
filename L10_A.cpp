@@ -1,8 +1,8 @@
 /*
     Programmer: Ryan Posey
-    Assignment: L7
-    Purpose: Practice using nested structs
-    Due date: 9/110/3025
+    Assignment: L10.A
+    Purpose: Practice using classes
+    Due date: 9/25/2025
 */
 
 #include <iostream>

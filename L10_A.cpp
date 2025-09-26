@@ -30,3 +30,16 @@ void personType::print() const {
         << left << " | DOB: " << left << setw(20) << this->date_of_birth_ << endl
         << left << " | Gender: " << left << setw(20) << this->gender_ << '\\n';
 }
+
+int main() {
+    personType p1{
+        "Sabrina",
+        "Morales",
+        "662 S. Southhampton Avenue Vista, CA 92083",
+        51.2,
+        "24 July 2017",
+        'F'
+    };
+
+    p1.print();
+}

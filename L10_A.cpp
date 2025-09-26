@@ -109,6 +109,10 @@ int main() {
         'F'
     };
 
+    cout << left << setw(10) << setfill('-') << "" << " # personType class # " << left << setw(10) << setfill('-') << "" << endl;
+
+    cout << setfill(' ');
+
     p1.print(), p2.print(), p3.print(), p4.print(), p5.print();
 
     cout << left << setw(20) << "equals(p1, p2) = " << left << boolalpha << p1.equals(p2) << endl;

@@ -110,4 +110,7 @@ int main() {
     };
 
     p1.print(), p2.print(), p3.print(), p4.print(), p5.print();
+
+    cout << left << "equals(p1, p2) = " << left << setw(20) << boolalpha << p1.equals(p2) << endl;
+    cout << left << "equals(p3, p4) = " << left << setw(20) << boolalpha << p3.equals(p4) << endl;
 }

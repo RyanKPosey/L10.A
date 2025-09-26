@@ -24,11 +24,11 @@ class personType {
 };
 
 void personType::print() const {
-    std::cout <<  left << " | Name: " << left << setw(20) << this->first_name_ << " " << this->last_name_ << endl
-        << left << " | Address: " << left << setw(20) << this->address_ << endl
-        << left << " | Height: " << left << setw(20) << std::fixed << std::setprecision(1) << this->height_inches_ << " in" << endl
-        << left << " | DOB: " << left << setw(20) << this->date_of_birth_ << endl
-        << left << " | Gender: " << left << setw(20) << this->gender_ << endl;
+    std::cout <<  left << setw(20) << " | Name: " << left << this->first_name_ << " " << this->last_name_ << endl
+        << left << setw(20) << " | Address: " << left << this->address_ << endl
+        << left << setw(20) << " | Height: " << left << std::fixed << std::setprecision(1) << this->height_inches_ << " in" << endl
+        << left << setw(20) << " | DOB: " << left << this->date_of_birth_ << endl
+        << left << setw(20) << " | Gender: " << left << this->gender_ << endl;
 }
 
 bool personType::equals(const personType& other) const {
@@ -111,6 +111,6 @@ int main() {
 
     p1.print(), p2.print(), p3.print(), p4.print(), p5.print();
 
-    cout << left << "equals(p1, p2) = " << left << setw(20) << boolalpha << p1.equals(p2) << endl;
-    cout << left << "equals(p3, p4) = " << left << setw(20) << boolalpha << p3.equals(p4) << endl;
+    cout << left << setw(20) << "equals(p1, p2) = " << left << boolalpha << p1.equals(p2) << endl;
+    cout << left << setw(20) << "equals(p3, p4) = " << left << boolalpha << p3.equals(p4) << endl;
 }

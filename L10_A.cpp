@@ -23,7 +23,7 @@ class personType {
         bool equals(const personType& other) const;
 };
 
-void personType::print() const {
+void personType::print() const { // Stretch 2 (Formatted output)
     std::cout <<  left << setw(20) << " | Name: " << left << this->first_name_ << " " << this->last_name_ << endl
         << left << setw(20) << " | Address: " << left << this->address_ << endl
         << left << setw(20) << " | Height: " << left << std::fixed << std::setprecision(1) << this->height_inches_ << " in" << endl
@@ -109,6 +109,7 @@ int main() {
         'F'
     };
 
+    // Stretch 1 (Heading)
     cout << left << setw(10) << setfill('-') << "" << " # personType class # " << left << setw(10) << setfill('-') << "" << endl;
 
     cout << setfill(' ');

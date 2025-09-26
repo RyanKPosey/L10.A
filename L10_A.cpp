@@ -20,3 +20,11 @@ class personType {
         void print() const;
         bool equals(const personType& other) const;
 };
+
+void personType::print() const {
+    std::cout << "Name: " << this->first_name_ << " " << this->last_name_
+        <<  " | Address: " << this->address_
+        << " | Height: " << std::fixed << std::setprecision(1) << this->height_inches_ << " in"
+        << " | DOB: " << this->date_of_birth_
+        << " | Gender: " << this->gender_ << '\\n';
+}

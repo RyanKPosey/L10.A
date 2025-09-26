@@ -10,7 +10,7 @@
 
 using namespace std;
 
-class personType {
+class personType { 
     public:
         std::string first_name_;
         std::string last_name_;
@@ -64,6 +64,9 @@ bool personType::equals(const personType& other) const {
 }
 
 int main() {
+
+    // Init members
+
     personType p1{
         "Sabrina",
         "Morales",
@@ -114,7 +117,11 @@ int main() {
 
     cout << setfill(' ');
 
+    // Print personType member data
+
     p1.print(), p2.print(), p3.print(), p4.print(), p5.print();
+
+    // Compare personType members
 
     cout << boolalpha;
     cout << left << setw(20) << "equals(p1, p2) = " << left << p1.equals(p2) << endl;

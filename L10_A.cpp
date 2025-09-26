@@ -24,7 +24,7 @@ class personType {
 };
 
 void personType::print() const {
-    std::cout <<  left << "Name: " << left << setw(20) << this->first_name_ << " " << this->last_name_ << endl
+    std::cout <<  left << " | Name: " << left << setw(20) << this->first_name_ << " " << this->last_name_ << endl
         << left << " | Address: " << left << setw(20) << this->address_ << endl
         << left << " | Height: " << left << setw(20) << std::fixed << std::setprecision(1) << this->height_inches_ << " in" << endl
         << left << " | DOB: " << left << setw(20) << this->date_of_birth_ << endl

@@ -109,5 +109,5 @@ int main() {
         'F'
     };
 
-    p1.print();
+    p1.print(), p2.print(), p3.print(), p4.print(), p5.print();
 }

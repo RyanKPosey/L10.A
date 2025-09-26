@@ -73,5 +73,41 @@ int main() {
         'F'
     };
 
+    personType p2{
+        "Elle",
+        "Macdonald",
+        "84 Green Drive Tracy, CA 95376",
+        52.3,
+        "17 September 2014",
+        'F'
+    };
+
+    personType p3{
+        "Hannah",
+        "Finley",
+        "8253 Linda Dr. Laguna Niguel, CA 92677",
+        49.8,
+        "13 September 2012",
+        'F'
+    };
+
+    personType p4{
+        "Arabella",
+        "Walter",
+        "7593 Wood St. Fountain Valley, CA 92708",
+        54.1,
+        "27 April 2010",
+        'F'
+    };
+
+    personType p5{
+        "Kye",
+        "Baird",
+        "8316 Lafayette Ave. North Hills, CA 91343",
+        55.8,
+        "28 November 2008",
+        'F'
+    };
+
     p1.print();
 }

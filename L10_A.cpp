@@ -28,7 +28,7 @@ void personType::print() const {
         << left << " | Address: " << left << setw(20) << this->address_ << endl
         << left << " | Height: " << left << setw(20) << std::fixed << std::setprecision(1) << this->height_inches_ << " in" << endl
         << left << " | DOB: " << left << setw(20) << this->date_of_birth_ << endl
-        << left << " | Gender: " << left << setw(20) << this->gender_ << '\\n';
+        << left << " | Gender: " << left << setw(20) << this->gender_ << endl;
 }
 
 int main() {
